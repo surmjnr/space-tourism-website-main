@@ -1,0 +1,133 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 1rem;
+}
+hr {
+    width: 43%;
+    margin: 0;
+    margin-right: -5rem;
+    z-index: 1;
+}
+.logo img {
+    height: 40px;
+    margin-left: 50px;
+    margin-right: 3rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    background-color: rgb(39, 40, 48);
+    padding: 1.5rem;  
+    margin: 0;
+    margin-top: 16px;
+    font-family: "Barlow Condensed";
+    padding-left: 4rem;
+    white-space: nowrap; 
+}
+
+.nav-links li {
+    display: inline;
+    padding: 1.5rem;
+}
+
+.nav-links li:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(134, 133, 133);
+}
+
+a span {
+    color: white;
+    margin-right: 5px;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.close {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-links {
+        display: flex ;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: #333;
+        /* opacity: 0.9; */
+        padding-top: 80px; 
+        flex-direction: column;
+        align-items: start;
+        width: 200px;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+        margin: 0;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);  
+        /* padding: 0; */
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 0;
+        padding: 1rem 0;
+    }
+    
+    .nav-links li:hover {
+        border-bottom: none;
+    }
+    hr {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        width: 1.5rem;
+        height: 1rem;
+        margin-right: 1rem;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;   
+    }
+    .close img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .nav-links li:hover {
+        border-bottom: 2px solid white;
+    }
+    
+
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .nav-links li {
+        padding: 1rem 0;
+    }
+    .nav-links {
+        margin-top: 0;
+        padding-left: 16px;
+        white-space: nowrap; 
+    }
+    .navbar {
+        margin-top: 0;
+    }
+    hr {
+        display: none;
+    }
+}
