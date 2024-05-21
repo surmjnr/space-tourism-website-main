@@ -1,5 +1,5 @@
 body {
-    background-image: url('/starter-code/assets/home/background-home-desktop.jpg');
+    background-image: url('starter-code/assets/home/background-home-desktop.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
@@ -58,7 +58,7 @@ h1{
 }
  @media screen and (max-width: 576px) {
     body {
-        background-image: url('/starter-code/assets/home/background-home-mobile.jpg');
+        background-image: url('starter-code/assets/home/background-home-mobile.jpg');
         background-size: 100%;
     }    
  .content{
@@ -78,7 +78,7 @@ h1{
 
 @media (min-width: 576px) and (max-width: 992px) {
     body {
-        background-image: url('/starter-code/assets/home/background-home-tablet.jpg');
+        background-image: url('starter-code/assets/home/background-home-tablet.jpg');
         background-size: 100%;
     }
     .content{
